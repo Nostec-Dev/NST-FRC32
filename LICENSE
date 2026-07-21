@@ -1,21 +1,33 @@
-MIT License
+# NST-FRC32 Licensing
 
-Copyright (c) 2026 Hugo Andres Llanos Benitez
+This repository uses a dual-license model to protect both open hardware designs and software source code.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+---
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## Hardware License
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+All files within the `/hardware` directory (including schematics, PCB manufacturing files, BOM, CPL, and 3D models) are licensed under the **CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S-2.0)**.
+
+Under this license:
+* You are free to manufacture, modify, and distribute these hardware designs.
+* Any modifications or derivative hardware designs must be published under the same CERN-OHL-S-2.0 license.
+* Attribution to the original author (**Hugo Llanos - Nostec**) must be maintained in all documentation and physical board markings.
+
+Full license text: https://ohwr.org/cern_ohl_s_v2.txt
+
+---
+
+## Firmware License
+
+All source code and firmware files within the `/firmware` directory are licensed under the **GNU General Public License v3.0 (GPLv3)**.
+
+Under this license:
+* You are free to run, study, modify, and share the software.
+* Any modified version of the software must also be distributed under the GPLv3 license.
+* Attribution to the original author (**Hugo Llanos - Nostec**) must be maintained.
+
+Full license text: https://www.gnu.org/licenses/gpl-3.0.txt
+
+---
+
+Copyright (c) 2026 Hugo Llanos - Nostec
