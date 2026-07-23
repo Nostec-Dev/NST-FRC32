@@ -6,7 +6,7 @@
 
 ## English
 
-This folder contains all electronic design and manufacturing files for the main control board of the **NST FRC32**, the open-source ESP32-driven system designed to transform plastic bottles into 3D printing filament. 
+This folder contains all electronic design and manufacturing files for the main control board of the **NST FRC32**, the open-source ESP32-driven system designed to transform plastic bottles into 3D printing filament.
 
 This board has been designed under **Nostec** engineering standards to ensure robustness, ease of assembly, and safety in handling inductive and thermal loads.
 
@@ -23,6 +23,11 @@ This board has been designed under **Nostec** engineering standards to ensure ro
 * **Motor Control:** 2 dedicated ports for A4988 drivers.
 * **Power Stage:** Dedicated MOSFET-controlled outputs for the heater cartridge and cooling fans.
 * **Signal Inputs:** Hardware-debounced connectors for Encoder, I2C, Thermistor, and Hall Effect Sensor (SS49E).
+
+### Power Supply & Safety Requirements
+To ensure proper operation and safety, the NST-FRC32 mainboard requires the following power setup:
+* **Power Supply:** A dedicated 12V or 24V DC power supply is required, with a minimum current rating of **10 Amps**.
+* **External Fuse (Crucial):** You MUST install an external **10A inline fuse** on the positive wire between the DC power supply and the mainboard's main power terminal. Do not skip this step, as it protects the system from overcurrent scenarios caused by the heater or stepper motors.
 
 ### Functional Pinout & Interfaces
 * **Hall Sensor (SS49E):** Analog input designated for measuring filament thickness or tension.
@@ -51,6 +56,11 @@ Esta placa ha sido diseñada bajo los estándares de ingeniería de **Nostec** p
 * **Control de Motores:** 2 puertos para drivers A4988.
 * **Potencia (Power):** Salidas controladas por MOSFETs dedicados para el cartucho calentador (Heater) y ventiladores de enfriamiento.
 * **Entradas de Señal:** Conectores con filtrado por hardware (debouncing) para Encoder, I2C, Termistor y Sensor de Efecto Hall (SS49E).
+
+### Requisitos de Alimentación y Seguridad
+Para garantizar el correcto funcionamiento y la seguridad, la placa principal del NST-FRC32 requiere la siguiente configuración de energía:
+* **Fuente de Alimentación:** Se requiere una fuente de alimentación de corriente continua (DC) de 12V o 24V, con una capacidad mínima de **10 Amperios**.
+* **Fusible Externo (Crucial):** DEBE instalar un **fusible aéreo de 10A** en el cable positivo entre la fuente de alimentación y la bornera de entrada principal de la placa. No omita este paso, ya que protege el sistema contra sobrecorrientes generadas por el cartucho calentador o los motores paso a paso.
 
 ### Asignación de Interfaces (Pinout Funcional)
 * **Sensor Hall (SS49E):** Entrada analógica destinada a medir el grosor o la tensión del filamento.
